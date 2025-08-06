@@ -25,6 +25,7 @@ def search_music(query: str):
             'skip_download': True,
             'cachedir': False,
             'forcejson': True,
+            'cookiefile': 'cookies.txt'  
         }
 
         with YoutubeDL(ydl_opts) as ydl:
